@@ -1,0 +1,16 @@
+<h1>
+    CONTACT US
+</h1>
+<form #contactForm="ngForm" (ngSubmit)= "getValues(contactForm.value)">
+    <h3>Full Name</h3>
+    <input type="text" ngModel name="First Name" placeholder="First Name">
+    <input type="text" ngModel name="Last Name" placeholder="Last Name">
+    <br><br>
+    <h3>Email</h3>
+    <input type="text" ngModel name="Email" placeholder="Email">
+    <br><br>
+    <h3>Message</h3>
+    <textarea ngModel name="Messages" placeholder="Your message.."> </textarea>
+    <br>
+    <button>Submit</button>
+</form>

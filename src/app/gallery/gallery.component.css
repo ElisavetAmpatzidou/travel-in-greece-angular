@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap:wrap;
+    padding: 0 4px;
+}
+.col{
+    flex: 33.3%;
+    max-width: 33.3%;
+    padding: 4px 4px;
+}
+@media (max-width:600px){
+    .col{
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+@media screen and (max-width:693px){
+.drop{
+    position: relative;
+    display: inline-block;
+}
+.drop a{
+    visibility: visible;
+}
+.drop p{
+    visibility: visible;
+}
+.dropdown-c{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width:100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    float: center;
+}
+.dropdown-c a {
+    color: black;
+    padding: 10px 5px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-c p {
+    color: black;
+    padding: 10px 5px;
+    display: block;
+    border: 1px solid black;
+}
+.dropdown-c a:hover{
+    background-color: #ddd;
+}
+.dropdown-c p:hover{
+    background-color: #ddd;
+}
+.drop:hover .dropdown-c{
+    display: block;
+}
+}
+.container {
+position: relative;
+}
+.text {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 30px;
+text-shadow: 2px 2px 5px blue;
+}
+
+.overlay {
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+overflow: hidden;
+width: 100%;
+height: 0;
+transition: .5s ease;
+}
+.container:hover .overlay {
+height: 100%;
+}
+.container:hover img{
+  opacity: 0.3;
+}
+

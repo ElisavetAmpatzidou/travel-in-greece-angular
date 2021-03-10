@@ -1,0 +1,24 @@
+.navbar{
+    background-color:#fff;
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: right;
+    
+}
+.navbar a{
+    color: rgb(124, 124, 240);
+    display: inline-block;
+    padding: 15px 20px 0 20px; 
+    text-decoration: none;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+h1{
+    font-family: "Lucida Console", Courier, monospace;
+}
+.navbar nav a.active{
+    color: rgb(124, 124, 240);
+    display: inline-block;
+    padding: 15px 20px 0 20px; 
+    border-bottom: 4px solid rgb(120, 142, 212);
+}
